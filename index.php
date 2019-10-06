@@ -11,20 +11,22 @@
 </head>
 
 <body>
-  <?php
-      require_once "navbar.php";
-    ?>
+
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
-    <div class="container slider">
+    <div class="container-fluid slider">
       <div class="carousel-inner">
         <div class="carousel-item single-filter-content content-1 active"></div>
         <div class="carousel-item single-filter-content content-2"></div>
         <div class="carousel-item single-filter-content content-3"></div>
+        <?php
+            require_once "navbar.php";
+          ?>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
