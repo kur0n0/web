@@ -41,9 +41,7 @@
       </div>
     </div>
   </section>
-  <footer class="container">
-
-  </footer>
+    <?php require_once "footer.php" ?>
 </body>
 
 </html>

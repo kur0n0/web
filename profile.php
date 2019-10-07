@@ -13,15 +13,19 @@
 
     <?php require_once "navbar.php";
       if(isset($_SESSION['userIsLoged'])){
-      $connection=mysqli_connect('localhost', 'root', '');
+      $connection=mysqli_connect('localhost', 'root', '', 'Users');
       if(!$connection){
         die('Ошибка соединения: '.mysqli_error());
-      }echo "Успешно соединились";
+      }
       $query="SELECT * FROM `users`";
-      $result=mysqli_query($connection, "SELECT * FROM `Users`");
+      $result=mysqli_query($connection, $query);
       if((mysqli_num_rows($result))>0){
-        while($row=mysqli_fetch_assoc($result)){
-          printf("(%d)\n (%s)\n (%s)\n (%s)\n", $row['id'], $row['Name'], $row['Surname'], $row['Description']);
+        while($row=mysqli_fetch_array($result)){
+          echo $row['id'];
+          echo $row['Name'];
+          echo $row['Surname'];
+          echo $row['Description'];
+          echo "</br></br></br>";
         }
         mysqli_free_result($result);
       }

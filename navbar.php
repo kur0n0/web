@@ -7,16 +7,16 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item"><a class="nav-link" href="pupils.php">Ученики</a></li>
-      <li class="nav-item"><a class="nav-link" href="teachers.php">Учителя</a></li>
-      <li class="nav-item"><a class="nav-link" href="timetable.php">Расписание звонков</a></li>
-      <li class="nav-item"><a class="nav-link" href="gradebook.php">Журнал посещаемости</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="pupils.php">Ученики</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="teachers.php">Учителя</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="timetable.php">Расписание звонков</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="gradebook.php">Журнал посещаемости</a></li>
     </ul>
     <ul class="navbar-nav mr-10px">
       <?php if(isset($_SESSION['userIsLoged'])) : ?>
-        <li class="nav-item"><a class="nav-link" href="logout.php">Выход</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="logout.php">Выход</a></li>
       <?php else : ?>
-        <li class="nav-item"><a class="nav-link" href="auth.php">Вход</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="auth.php">Вход</a></li>
       <?php endif; ?>
     </ul>
   </div>
