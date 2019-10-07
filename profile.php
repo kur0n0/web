@@ -1,17 +1,4 @@
-<?php
-if(!isset($_SESSION['userIsLoged'])) {
-
-
-  echo '<div style="color:red;font-size:45px;">'.'ЭЭЭЭ <a style="text-decoration:underline;" href="auth.php">АВТОРИЗУЙСЯ<a> ДА СУКА!'.'</div><hr>';
-
-}
-else {
-
-}
-?>
-
 <!DOCTYPE html>
-  <?php if(isset($_SESSION['userIsLoged'])) : ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -23,16 +10,17 @@ else {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <?php require_once "navbar.php";
+      if(isset($_SESSION['userIsLoged'])){
       $connection=mysqli_connect('localhost', 'root', '');
       if(!$connection){
         die('Ошибка соединения: '.mysql_error());
       }echo "Успешно соединились";
-      if($is_log===True){
-        echo "string";
-      }
       mysqli_close($connection);
+    }else {
+      echo "<h1>Пожалуста авторизируйтесь!</h1>";
+    }
     ?>
   </body>
 </html>
-<?php endif; ?>
