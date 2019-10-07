@@ -3,7 +3,6 @@ if(!isset($_SESSION['userIsLoged'])) {
 
 
   echo '<div style="color:red;font-size:45px;">'.'ЭЭЭЭ <a style="text-decoration:underline;" href="auth.php">АВТОРИЗУЙСЯ<a> ДА СУКА!'.'</div><hr>';
-  // header('location: /');
 
 }
 else {
@@ -16,7 +15,7 @@ else {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Профиль</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
