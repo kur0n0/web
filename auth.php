@@ -16,6 +16,7 @@
     <script src="js/my.js"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
+  <?php require_once "navbar.php"; ?>
 <body class="b-signup" ng-controller="RegisterCtrl" ng-app="myApp">
  <div class="container container-signup">
    <div id="signup">

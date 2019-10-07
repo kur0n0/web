@@ -75,29 +75,9 @@ ul .nav.nav-pills {
   margin: 0 0 10px 0;
 }
 
-/* form {
-  height: 300px;
-  width: 450px;
-}
-
-.container-button{
-  text-align: center;
-}
-
-.bag-dark{
-
-}
-
-.bg{
-  margin-top: 10rem;
-  margin-left: 420px;
-  height: 300px;
-  width: 450px;
-} */
-
 .b-signup {
     min-height:100%;
-    background-color: #343a40;
+    background-color: white;
 }
 
 .text-center{

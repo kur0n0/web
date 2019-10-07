@@ -15,11 +15,19 @@
       if(isset($_SESSION['userIsLoged'])){
       $connection=mysqli_connect('localhost', 'root', '');
       if(!$connection){
-        die('Ошибка соединения: '.mysql_error());
+        die('Ошибка соединения: '.mysqli_error());
       }echo "Успешно соединились";
+      $query="SELECT * FROM `users`";
+      $result=mysqli_query($connection, "SELECT * FROM `Users`");
+      if((mysqli_num_rows($result))>0){
+        while($row=mysqli_fetch_assoc($result)){
+          printf("(%d)\n (%s)\n (%s)\n (%s)\n", $row['id'], $row['Name'], $row['Surname'], $row['Description']);
+        }
+        mysqli_free_result($result);
+      }
       mysqli_close($connection);
     }else {
-      echo "<h1>Пожалуста авторизируйтесь!</h1>";
+      echo "<h1>Пожалуйста авторизируйтесь!</h1>";
     }
     ?>
   </body>

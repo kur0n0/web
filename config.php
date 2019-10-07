@@ -45,6 +45,7 @@
      if($login_b==True && $password_b==True && $tmp_password==$tmp_login){
         $is_log=True;
         $_SESSION['userIsLoged']=$is_log;
+        $_SESSION['id']=$tmp_login;
        header('Location: profile.php');
      }
      elseif($login_b==True){
