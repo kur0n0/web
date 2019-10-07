@@ -5,11 +5,13 @@
   /* margin-top: 30px; */
   /* margin-bottom: -200px; */
 }
+
 .slider {
   padding: 0;
   height: 50vh;
 }
 div.container-fluid.slider {
+  z-index: -1px;
   height: 100vh;
 }
 
@@ -22,7 +24,7 @@ div.container-fluid.slider {
 }
 
 .content-3 {
-  background: url(../img/3.jpg) no-repeat 50% 100%;
+  background: url(../img/4.jpeg) no-repeat center center/cover;
 }
 
 .container-bg {

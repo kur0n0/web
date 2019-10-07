@@ -1,4 +1,18 @@
+<?php
+if(!isset($_SESSION['userIsLoged'])) {
+
+
+  echo '<div style="color:red;font-size:45px;">'.'ЭЭЭЭ <a style="text-decoration:underline;" href="auth.php">АВТОРИЗУЙСЯ<a> ДА СУКА!'.'</div><hr>';
+  // header('location: /');
+
+}
+else {
+
+}
+?>
+
 <!DOCTYPE html>
+  <?php if(isset($_SESSION['userIsLoged'])) : ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -15,8 +29,11 @@
       if(!$connection){
         die('Ошибка соединения: '.mysql_error());
       }echo "Успешно соединились";
-
+      if($is_log===True){
+        echo "string";
+      }
       mysqli_close($connection);
     ?>
   </body>
 </html>
+<?php endif; ?>
