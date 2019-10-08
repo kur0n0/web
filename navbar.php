@@ -14,6 +14,7 @@
     </ul>
     <ul class="navbar-nav mr-10px">
       <?php if(isset($_SESSION['userIsLoged'])) : ?>
+        <li class="nav-item"><a class="nav-link text-light" href="profile.php">Мой профиль</a></li>
         <li class="nav-item"><a class="nav-link text-light" href="logout.php">Выход</a></li>
       <?php else : ?>
         <li class="nav-item"><a class="nav-link text-light" href="auth.php">Вход</a></li>

@@ -15,7 +15,7 @@
   <h1 class="title">Список учеников</h1>
   <div class="container">
   <section class="container-tb">
-    <table class="table">
+    <table class="table pb-3">
       <thead class="thead-dark">
         <tr>
           <th scope="col">#</th>
@@ -27,6 +27,102 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Лапин</td>
+          <td>Роберт</td>
+          <td>Эльдарович</td>
+          <td>10</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Чернов</td>
+          <td>Май</td>
+          <td>Сергеевич</td>
+          <td>3</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Устинов</td>
+          <td>Гурий</td>
+          <td>Макарович</td>
+          <td>8</td>
+          <td>4.1</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Лапин</td>
+          <td>Роберт</td>
+          <td>Эльдарович</td>
+          <td>10</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Чернов</td>
+          <td>Май</td>
+          <td>Сергеевич</td>
+          <td>3</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Устинов</td>
+          <td>Гурий</td>
+          <td>Макарович</td>
+          <td>8</td>
+          <td>4.1</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Лапин</td>
+          <td>Роберт</td>
+          <td>Эльдарович</td>
+          <td>10</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Чернов</td>
+          <td>Май</td>
+          <td>Сергеевич</td>
+          <td>3</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Устинов</td>
+          <td>Гурий</td>
+          <td>Макарович</td>
+          <td>8</td>
+          <td>4.1</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Лапин</td>
+          <td>Роберт</td>
+          <td>Эльдарович</td>
+          <td>10</td>
+          <td>3.7</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Чернов</td>
+          <td>Май</td>
+          <td>Сергеевич</td>
+          <td>3</td>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Устинов</td>
+          <td>Гурий</td>
+          <td>Макарович</td>
+          <td>8</td>
+          <td>4.1</td>
+        </tr>
         <tr>
           <th scope="row">1</th>
           <td>Лапин</td>

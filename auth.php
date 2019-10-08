@@ -22,28 +22,36 @@
    <div id="signup">
       <div class="signup-screen">
          <div class="space-bot text-center">
-            <h1 class="h-signup">Sign up</h1>
+            <h1 class="h-signup">Вход</h1>
            <div class="divider"></div>
          </div>
+         <?php if(isset($_SESSION['try'])) : ?>
+           <div class="alert alert-danger">
+             <p>Чтобы просматривать контент пожалуйста авторизуйтесь!</p>
+           </div>
+          <?php  UnSet($_SESSION['try']); ?>
+         <?php endif; ?>
            <form action="config.php" class="form-register" method="post" name="register" novalidate>
+
              <div class="input-field col s6">
               <input id="email" type="email" name="login" ng-model="email" class="validate" required>
-              <label class="active" for="email">Email</label>
+              <label class="active" for="email">Адрес электронной почты</label>
              </div>
-             <p class="alert alert-danger" ng-show="form-register.email.$error.email">Your email is invalid.</p>
+             <p class="alert alert-danger" ng-show="form-register.email.$error.email">Неверный адрес электронной почты</p>
              <div class="input-field col s6">
                <input id="password" type="password" name="password" ng-model="password" class="validate" required>
-               <label class="active" for="password">Password</label>
+               <label class="active" for="password">Пароль</label>
               </div>
               <div class="space-top text-center">
                 <button type="submit" ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
-                  <i class="material-icons left">done</i> Done
+                  <i class="material-icons left">done</i> Войти
                 </button>
               </div>
              </form>
            </div>
         </div>
     </div>
-
   </body>
+
+  <?php require_once "footer.php"; ?>
 </html>

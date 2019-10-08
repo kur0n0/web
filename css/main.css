@@ -36,7 +36,7 @@ div.container-fluid.slider {
 }
 
 .content-3 {
-  background: url(../img/4.jpeg) no-repeat center center/cover;
+  background: url(../img/3.jpeg) no-repeat center center/cover;
 }
 
 .container-bg {
@@ -107,8 +107,8 @@ ul .nav.nav-pills {
 /* Footer */
 
 footer{
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   width: 100%;
   background-color: #343a40;
   padding: 16px 0;
@@ -142,8 +142,9 @@ footer .underline a:hover::after{
 
 .container-signup {
     max-width: 400px;
-    max-height: 100px;
+    /* max-height: 100px; */
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .alert-danger{
