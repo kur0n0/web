@@ -4,7 +4,7 @@
   <div class="container">
     <div class="d-flex justify-content-between">
       <div class="footer-left">
-        <p class="text-light">© 2019 Copyright:<a href="#" class="text-light underline">School.com</a></p>
+        <p class="text-light">© 2019 Copyright:<a href="#" class="underline text-light">School.com</a></p>
       </div>
       <div class="footer-right">
         <a href="#" class="text-light"><i class="fab fa-vk fa-lg"></i></a>

@@ -1,5 +1,12 @@
 html {
+  /* position: relative; */
+  height: 100%;
+}
+
+body{
   position: relative;
+  margin: 0;
+  /* Растягиваем body по высоте html */
   min-height: 100%;
 }
 
@@ -100,6 +107,9 @@ ul .nav.nav-pills {
 /* Footer */
 
 footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #343a40;
   padding: 16px 0;
 }
