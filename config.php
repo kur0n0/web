@@ -25,6 +25,8 @@
     // echo '</pre>';
     $login_b=False;
     $password_b=False;
+    $tmp_login=0;
+    $tmp_password=0;
     if(isset($_POST["login"]) && isset($_POST["password"])){
       $login=$_POST["login"];
       $password=md5($_POST["password"]. "sadljfhlh");

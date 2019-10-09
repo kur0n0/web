@@ -27,7 +27,7 @@
          </div>
          <?php if(isset($_SESSION['try'])) : ?>
            <div class="alert alert-danger">
-             <p>Чтобы просматривать контент пожалуйста авторизуйтесь!</p>
+             <p>Чтобы просматривать личную информацию пожалуйста авторизуйтесь!</p>
            </div>
           <?php  UnSet($_SESSION['try']); ?>
          <?php endif; ?>
