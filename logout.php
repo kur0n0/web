@@ -2,4 +2,4 @@
 
 session_destroy();
 UnSet($_SESSION['userIsLoged']);
-header('location: index.php');
+header('location: /');

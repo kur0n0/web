@@ -32,7 +32,6 @@
           <?php  UnSet($_SESSION['try']); ?>
          <?php endif; ?>
            <form action="config.php" class="form-register" method="post" name="register" novalidate>
-
              <div class="input-field col s6">
               <input id="email" type="email" name="login" ng-model="email" class="validate" required>
               <label class="active" for="email">Адрес электронной почты</label>
@@ -52,6 +51,6 @@
         </div>
     </div>
   </body>
-
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <?php require_once "footer.php"; ?>
 </html>
