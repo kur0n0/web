@@ -16,25 +16,27 @@
       if(!$connection){
         die('Ошибка соединения: '.mysqli_error());
       }
+      $white_id=array(1,2);
       $id=$_SESSION['id']+1;
-      $query="SELECT * FROM `Personal data` WHERE id=$id";
-      mysqli_set_charset($connection, "utf8");
-      $result=mysqli_query($connection, $query);
-      if((mysqli_num_rows($result))>0){
-        while($row=mysqli_fetch_assoc($result)){
-          $name=$row['Name'];
-          $surname=$row['Surname'];
-          $description=$row['Description'];
-          $link_img=$row['Link'];
+      if(in_array($id,$white_id)){
+        $query="SELECT * FROM `Personal data` WHERE id=$id";
+        mysqli_set_charset($connection, "utf8");
+        $result=mysqli_query($connection, $query);
+        if((mysqli_num_rows($result))>0){
+          while($row=mysqli_fetch_assoc($result)){
+            $name=$row['Name'];
+            $surname=$row['Surname'];
+            $description=$row['Description'];
+            $link_img=$row['Link'];
+          }
+          mysqli_free_result($result);
         }
-        mysqli_free_result($result);
+        echo "<p><img max-width='50%' height='600' src='$link_img'></p>";
+        echo "<p><strong>Имя: </strong>$name</p>";
+        echo "<p><strong>Фамилия: </strong>$surname</p>";
+        echo "<p><strong>Описание: </strong>$description</p>";
       }
-      echo "<p><img max-width='50%' height='600' src='$link_img'></p>";
-      echo "<p><strong>Имя: </strong>$name</p>";
-      echo "<p><strong>Фамилия: </strong>$surname</p>";
-      echo "<p><strong>Описание: </strong>$description</p>";
-
-      if($id==1){
+      if($id==1 && in_array($id,$white_id)){
         $query_rating="SELECT * FROM `Rating` WHERE id=$id";
         $result_rating=mysqli_query($connection, $query_rating);
         if((mysqli_num_rows($result_rating))>0){
@@ -52,7 +54,7 @@
           mysqli_free_result($result_rating);
         }
       }
-      if($id==2){
+      if($id==2 && in_array($id,$white_id)){
         $query_comment="SELECT * FROM `Comment` Where id=$id";
         $result_comment=mysqli_query($connection, $query_comment);
         if((mysqli_num_rows($result_comment))>0){
@@ -66,6 +68,7 @@
         }
       }
           mysqli_close($connection);
+          safety_request("sdf");
     }else {
       $_SESSION['try']=true;
       header('Location: auth.php');
