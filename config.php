@@ -1,4 +1,5 @@
 <?php
+  require_once "functions.php";
   session_start();
   $is_log=False;
 
@@ -27,9 +28,9 @@
     $password_b=False;
     $tmp_login=0;
     $tmp_password=0;
-    if(isset($_POST["login"]) && isset($_POST["password"])){
-      $login=$_POST["login"];
-      $password=md5($_POST["password"]. "sadljfhlh");
+    if(isset($_POST[safety_request("login")]) && isset($_POST[safety_request("password")])){
+      $login=$_POST[safety_request("login")];
+      $password=md5($_POST[safety_request("password")]. "sadljfhlh");
       for($i=0;$i<$quantity_array;$i++){
         if(isset($array[$i]["login"])){
           if((strcmp($array[$i]["login"], $login))==1){
