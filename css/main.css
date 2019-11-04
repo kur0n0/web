@@ -202,3 +202,7 @@ footer .underline a:hover::after{
     font-size: 12px;
     color: white
 }
+
+.sendForm{
+  margin-bottom: 10px;
+}
