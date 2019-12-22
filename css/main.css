@@ -206,3 +206,13 @@ footer .underline a:hover::after{
 .sendForm{
   margin-bottom: 10px;
 }
+
+.addObject{
+  margin-left: 150px;
+  
+}
+
+.pic{
+    width: 150px;
+    height: 150px;
+}

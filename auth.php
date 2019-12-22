@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/my.js"></script>
+      <script src="https://kit.fontawesome.com/ce0d469775.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <?php require_once "navbar.php"; ?>
@@ -46,6 +47,13 @@
                   <i class="material-icons left">done</i> Войти
                 </button>
               </div>
+               <?php
+               $id_app = '7239852';
+               $url_script = 'http://school.com/auth_vk.php'
+               ?>
+               <div>
+                   <a href='<?php echo 'https://oauth.vk.com/authorize?client_id='.$id_app.'&redirect_uri='.$url_script.'&response_type=code'; ?>'><i class="fab fa-vk"></i></a>
+               </div>
              </form>
            </div>
         </div>

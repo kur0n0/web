@@ -12,6 +12,7 @@
       <li class="nav-item"><a class="nav-link text-light" href="timetable.php">Расписание звонков</a></li>
       <li class="nav-item"><a class="nav-link text-light" href="gradebook.php">Журнал посещаемости</a></li>
       <li class="nav-item"><a class="nav-link text-light" href="tables.php">Таблицы</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="search.php">Поиск</a></li>
     </ul>
     <ul class="navbar-nav mr-10px">
       <?php if(isset($_SESSION['userIsLoged'])) : ?>
